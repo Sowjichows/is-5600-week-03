@@ -99,7 +99,7 @@ function respondSSE (req, res) {
     chatEmitter.off('message', onMessage);
   });
 }
-// add this line just after we declare the express app
+// add this line just after we declare the Express app
 app.use(express.static(__dirname + '/public'));
 app.listen(port, function() {
   console.log(`Listening on port ${port}`);
