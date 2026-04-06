@@ -67,8 +67,7 @@ function chatApp(req, res) {
 // register the endpoint with the app (make sure to remove the old binding to the `/` route)
 const app = express();
 app.get('/', chatApp);
-// function declarations for respondText, respondJson, respondNotFound and respondEcho stay here
-app.get('/', respondText);
+
 app.get('/json', respondJson);
 app.get('/echo', respondEcho);
 
